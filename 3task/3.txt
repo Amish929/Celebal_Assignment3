@@ -1,0 +1,18 @@
+Create Virtual maching and Vnet from Azure CLI
+
+Create VM and Virtual Network using Azure CLI
+Purpose: Learn resource creation using code (CLI).
+
+Steps:
+
+Open Azure CLI (in portal or local terminal).
+
+Create resource group:
+az group create --name MyResourceGroup --location eastus
+
+Create VNet:
+az network vnet create --resource-group MyResourceGroup --name MyVNet --address-prefix 10.0.0.0/1
+
+Create VM:
+az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+
