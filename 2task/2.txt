@@ -1,0 +1,83 @@
+Observe assigned Subscriptions Observe Azure Entra ID or create own Azure Entra ID in personal Azure account Create test users and groups Assign a RBAC role to user and test Create a custom role and assigned to users and test
+
+
+
+Observe Assigned Subscriptions
+Purpose: Understand which Azure subscription you're working under.
+
+Steps:
+
+Go to the Azure Portal.
+
+Click on your profile in the top-right corner.
+
+Click on "Switch Directory" or "View Subscriptions".
+
+Note the Subscription Name, ID, and Status.
+
+Confirm that your resources are being created under the correct subscription.
+
+
+Observe or Create Azure Entra ID (Azure AD)
+Purpose: Manage identities like users and groups in Azure.
+
+Steps:
+
+In the Azure portal, search for "Azure Active Directory" (now called Entra ID).
+
+Observe existing tenant or click on "Create a tenant" to make a new one.
+
+Follow the wizard to create a new directory (tenant) if needed.
+
+
+Create Test Users and Groups
+Purpose: Create sample identities to test permissions.
+
+Steps:
+
+Go to Azure Active Directory > Users > New User.
+
+Fill in basic details like username and password.
+
+Click "Create".
+
+Go to Groups > New Group to create a group.
+
+Add the test users to the newly created group.
+
+
+
+Assign a Built-in RBAC Role to a User
+Purpose: Control what a user can do in Azure.
+
+Steps:
+
+Go to Subscriptions > [Your Subscription] > Access control (IAM).
+
+Click + Add > Add role assignment.
+
+Select a role (e.g., Reader or Virtual Machine Contributor).
+
+Choose the user or group and click Save.
+
+Sign in with the test user to check if they can perform the assigned actions.
+
+
+
+Create and Assign a Custom Role
+Purpose: Make a role with specific permissions.
+
+Steps:
+
+Go to Azure Portal > Subscriptions > Access control (IAM) > Roles.
+
+Click on + Add > Add custom role.
+
+Define name, permissions (use JSON or GUI), and assign scope (e.g., subscription).
+
+After saving, assign this custom role to a user just like Task 4.
+
+Test by logging in with that user.
+
+
+
