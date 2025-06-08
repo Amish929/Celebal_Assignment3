@@ -1,0 +1,45 @@
+A. Schedule a Daily backup of VM at 3:AM using vault 1. Create an Alert rule for VM CPU percentage: Criteria: CPU% MoreThan 80 There Should be analert on Email." B.Provision backups in backup center 2. Schedule a Daily backup of VM at 3:AM using vault. Configure Retention period in backup policy and retain an old backup
+
+
+Schedule Daily VM Backup at 3:00 AM using Vault
+Purpose: Automatically back up VM data.
+
+Steps:
+
+Go to Recovery Services Vault > + Create.
+
+Once created, go to Backup > Select VM > Choose backup policy.
+
+Set backup time to 3:00 AM.
+
+Save and enable backup.
+
+Create Alert Rule for VM CPU > 80%
+Purpose: Notify admin if CPU usage is high.
+
+Steps:
+
+Go to VM > Monitoring > Alerts > + New Alert Rule.
+
+Condition: CPU Percentage > 80%.
+
+Action Group: Add email notification.
+
+Click Create alert rule.
+
+
+
+Provision Backup in Backup Center with Retention Policy
+Purpose: Manage backups in a centralized place.
+
+Steps:
+
+Go to Backup Center.
+
+Select + Backup Instance, pick VM.
+
+Choose Backup Policy: Set schedule time to 3:00 AM.
+
+Set Retention period (e.g., retain daily backups for 30 days).
+
+Click Create.
