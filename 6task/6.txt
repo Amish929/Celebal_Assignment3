@@ -1,0 +1,14 @@
+Create a VM from Powershell
+
+Create a VM using PowerShell
+Purpose: Use PowerShell to automate VM creation.
+
+Steps:
+
+Open Azure PowerShell.
+
+Login:
+Connect-AzAccount
+
+Create VM:
+New-AzVM -ResourceGroupName "MyResourceGroup" -Name "MyVM2" -Location "EastUS" -ImageName "Win2019Datacenter"
