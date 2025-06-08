@@ -1,0 +1,16 @@
+Create and assign a any policy at subscription level
+
+Create and Assign Policy at Subscription Level
+Purpose: Apply rules to control resources.
+
+Steps:
+
+Go to Azure Policy in the portal.
+
+Click Definitions > + Policy definition to create or use existing.
+
+Assign to Subscription under Assignments tab.
+
+Choose policy (e.g., allow only East US region), select subscription and scope.
+
+Click Review + Create.
